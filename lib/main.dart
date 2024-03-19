@@ -11,7 +11,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
+// Setting preferred device orientations to portrait mode
   await SystemChrome.setPreferredOrientations(
     [
       DeviceOrientation.portraitDown,
