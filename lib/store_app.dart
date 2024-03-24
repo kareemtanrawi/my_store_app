@@ -3,6 +3,8 @@ import 'package:store_app/core/app/connectivity_controller.dart';
 import 'package:store_app/core/common/screens/no_network_screen.dart';
 
 import 'package:flutter/material.dart';
+import 'package:store_app/core/styles/fonts/font_family_helper.dart';
+import 'package:store_app/core/styles/fonts/font_weight_helper.dart';
 
 class StoreApp extends StatelessWidget {
   const StoreApp({super.key});
@@ -36,8 +38,46 @@ class StoreApp extends StatelessWidget {
               },
               home: Scaffold(
                 appBar: AppBar(
+                  centerTitle: true,
                   title: const Text(
                     'Store App',
+                  ),
+                ),
+                body: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Text Fonts',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text(
+                        'كريم محمود ',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+
+                      //!new
+                      Text(
+                        'Text Fonts',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: FontFamilyHelper.poppinsEnglish,
+                          fontWeight: FontWeightHelper.bold,
+                        ),
+                      ),
+                      Text(
+                        'كريم محمود ',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontFamily: FontFamilyHelper.cairoArabic,
+                          fontWeight: FontWeightHelper.bold,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
