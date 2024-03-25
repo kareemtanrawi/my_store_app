@@ -30,6 +30,9 @@ class StoreApp extends StatelessWidget {
               builder: (context, widget) {
                 return GestureDetector(
                   onTap: () {
+                    //to enable when the user clicks on the screen and
+                    //the screen loses focus when the user clicks on the screen and
+                    //the screen loses focus when the user clicks on the screen
                     FocusManager.instance.primaryFocus?.unfocus();
                   },
                   child: Scaffold(
