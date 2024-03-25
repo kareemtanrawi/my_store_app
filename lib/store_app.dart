@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:store_app/core/app/connectivity_controller.dart';
 import 'package:store_app/core/common/screens/no_network_screen.dart';
+import 'package:store_app/core/language/app_localization_setup.dart';
 import 'package:store_app/core/routes/app_routes.dart';
 import 'package:store_app/core/styles/themes/app_themes.dart';
 
@@ -20,6 +21,12 @@ class StoreApp extends StatelessWidget {
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
               theme: themeLight(),
+              locale: const Locale('ar'),
+              supportedLocales: AppLocalizationsSetup.supportedLocales,
+              localizationsDelegates:
+                  AppLocalizationsSetup.localizationsDelegates,
+              localeResolutionCallback:
+                  AppLocalizationsSetup.localeResolutionCallback,
               builder: (context, widget) {
                 return Scaffold(
                   body: Builder(
