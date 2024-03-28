@@ -13,7 +13,7 @@ class PageUnderBuild extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-              AppsImages.pageUnderBuild,
+              AppImages.pageUnderBuild,
             ),
             fit: BoxFit.fill,
           ),

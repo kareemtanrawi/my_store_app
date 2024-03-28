@@ -13,7 +13,7 @@ class NpNetworkScreen extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-              AppsImages.noNetwork,
+              AppImages.noNetwork,
             ),
             fit: BoxFit.fill,
           ),

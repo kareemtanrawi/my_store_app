@@ -4,7 +4,7 @@ import 'package:store_app/core/styles/themes/color_extensions.dart';
 
 extension context on BuildContext {
   //Colors
-  MyColor get color => Theme.of(this).extension<MyColor>()!;
+  MyColors get color => Theme.of(this).extension<MyColors>()!;
   //Languages
   String translate(String langKey) {
     return AppLocalizations.of(this)!.translate(langKey).toString();

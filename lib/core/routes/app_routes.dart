@@ -9,6 +9,7 @@ class AppRoutes {
   static const String testTwo = 'testTwo';
 
   static Route<void> onGenerateRoute(RouteSettings settings) {
+    // ignore: unused_local_variable
     final argc = settings.arguments;
     switch (settings.name) {
       case testOne:

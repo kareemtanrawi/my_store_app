@@ -77,9 +77,12 @@ flutter:
     - .env.dev
     - .env.prod
     - assets/images/core/
+    - assets/images/admin/
+    - assets/images/customer/
+    - assets/svg/
     - assets/icons/
-    - lang/ar.json/
-    - lang/en.json/
+    - lang/ar.json
+    - lang/en.json
 
   fonts:
     #Arabic Font
