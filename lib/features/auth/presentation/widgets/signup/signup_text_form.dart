@@ -4,7 +4,6 @@ import 'package:store_app/core/common/animation/animation_do.dart';
 import 'package:store_app/core/common/widget/custom_text_feild.dart';
 import 'package:store_app/core/extensions/context_extension.dart';
 import 'package:store_app/core/language/lang_keys.dart';
-
 import 'package:store_app/core/utils/app_regex.dart';
 
 class SignUpTextFrom extends StatefulWidget {
