@@ -20,8 +20,8 @@ class StoreApp extends StatelessWidget {
             minTextAdapt: true,
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
-              theme: themeLight(),
-              locale: const Locale('ar'),
+              theme: themeDark(),
+              locale: const Locale('en'),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
               localizationsDelegates:
                   AppLocalizationsSetup.localizationsDelegates,
@@ -46,7 +46,7 @@ class StoreApp extends StatelessWidget {
                 );
               },
               onGenerateRoute: AppRoutes.onGenerateRoute,
-              initialRoute: AppRoutes.testOne,
+              initialRoute: AppRoutes.login,
             ),
           );
         } else {
