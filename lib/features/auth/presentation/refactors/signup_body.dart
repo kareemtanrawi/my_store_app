@@ -8,11 +8,12 @@ import 'package:store_app/core/routes/app_routes.dart';
 import 'package:store_app/core/styles/fonts/font_weight_helper.dart';
 import 'package:store_app/features/auth/presentation/widgets/auth_title_info.dart';
 import 'package:store_app/features/auth/presentation/widgets/dark_and_lang_button.dart';
-import 'package:store_app/features/auth/presentation/widgets/login/login_button.dart';
-import 'package:store_app/features/auth/presentation/widgets/login/login_text_form.dart';
+import 'package:store_app/features/auth/presentation/widgets/signup/signUp_button.dart';
+import 'package:store_app/features/auth/presentation/widgets/signup/signup_text_form.dart';
+import 'package:store_app/features/auth/presentation/widgets/signup/user_avatar_image.dart';
 
-class LoginBody extends StatelessWidget {
-  const LoginBody({super.key});
+class SignUpBody extends StatelessWidget {
+  const SignUpBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,35 +29,40 @@ class LoginBody extends StatelessWidget {
             //!Dark Mode and Language
             const DarkAndLangButton(),
             SizedBox(
-              height: 50.sp,
+              height: 30.sp,
             ),
             //! Welcome Info
             AuthTitleInfo(
-              title: context.translate(LangKeys.login),
-              description: context.translate(LangKeys.welcome),
+              title: context.translate(LangKeys.signUp),
+              description: context.translate(LangKeys.signUpWelcome),
             ),
             SizedBox(
-              height: 30.sp,
+              height: 10.sp,
             ),
-            //! Login TextFrom
-            const LoginTextField(),
+            //! User Avatar Image
+            const UserAvatarImage(),
             SizedBox(
-              height: 30.sp,
+              height: 20.sp,
             ),
-            //! Login Button
-            const LoginButton(),
+            //! SignUp TextFrom
+            const SignUpTextFrom(),
             SizedBox(
-              height: 30.sp,
+              height: 20.sp,
             ),
-            //! Go To Sign Up SCreen
+            //! SignUp Button
+            const SignUpButton(),
+            SizedBox(
+              height: 20.sp,
+            ),
+            //! Go To Login SCreen
             CustomFadeInDown(
               duration: 400,
               child: TextButton(
                 onPressed: () {
-                  context.pushReplacementNamed(AppRoutes.signUp);
+                  context.pushReplacementNamed(AppRoutes.login);
                 },
                 child: TextApp(
-                  text: context.translate(LangKeys.createAccount),
+                  text: context.translate(LangKeys.youHaveAccount),
                   theme: context.textStyle.copyWith(
                     fontSize: 18.sp,
                     fontWeight: FontWeightHelper.bold,
